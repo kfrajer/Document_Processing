@@ -15,8 +15,7 @@ s3_client = boto3.client('s3', region_name=REGION)
 bedrock_client = boto3.client('bedrock-runtime', region_name=REGION)
 
 # Claude model ID for Anthropic Claude
-MODEL_ID = "anthropic.claude-3-sonnet-20240229-v1:0"
-
+MODEL_ID = "us.anthropic.claude-3-7-sonnet-20250219-v1:0" #"anthropic.claude-3-sonnet-20240229-v1:0"
 
 def load_image(file_path: str) -> str:
     """loads image and base64 encodes it"""

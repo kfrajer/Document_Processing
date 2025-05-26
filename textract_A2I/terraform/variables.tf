@@ -7,7 +7,7 @@ variable "project_name" {
 variable "aws_region" {
   description = "AWS region to deploy resources"
   type        = string
-  default     = "us-east-1"
+  default     = "us-west-2"
 }
 
 variable "create_state_iam_policy" {
@@ -19,13 +19,13 @@ variable "create_state_iam_policy" {
 variable "state_bucket_name" {
   description = "Name of the S3 bucket for Terraform state"
   type        = string
-  default     = "terraform-state-bucket-rdali"
+  default     = "terraform-state-bucket-cmos"
 }
 
 variable "state_table_name" {
   description = "Name of the DynamoDB table for Terraform state locking"
   type        = string
-  default     = "terraform-state-table-rdali"
+  default     = "terraform-state-table-cmos"
 }
 
 variable "aws_cognito_users" {

@@ -1,7 +1,7 @@
 variable "project_name" {
   description = "Name of the project, used for resource naming"
   type        = string
-  default     = "document-processor"
+  default     = "document-processor-cmos"
 }
 
 variable "aws_region" {
@@ -19,11 +19,11 @@ variable "create_state_iam_policy" {
 variable "state_bucket_name" {
   description = "Name of the S3 bucket for Terraform state"
   type        = string
-  default     = "terraform-state-bucket-rdali"
+  default     = "terraform-state-bucket-cmos"
 }
 
 variable "state_table_name" {
   description = "Name of the DynamoDB table for Terraform state locking"
   type        = string
-  default     = "terraform-state-table-rdali"
+  default     = "terraform-state-table-cmos"
 }
