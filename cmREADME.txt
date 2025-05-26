@@ -5,6 +5,10 @@ export AWS_PROFILE=confoo
 export TF_VAR_LOCAL_AWS_PROFILE="${AWS_PROFILE}"
 
 
+## REFERENCES
+
+Slides from Rola: https://drive.google.com/file/d/1nrsYovywQD6FsZZAjKsEWrFcRn549vjE/view
+
 
 
 ## SAMPLE OUTPUTS
